@@ -114,6 +114,7 @@ TenSach NVARCHAR(50) NOT NULL,
 SoLuong INT,
 SoTrang INT NOT NULL,
 TinhTrangSach NVARCHAR(50)NOT NULL,
+DoHuHao float not null,
 PRIMARY KEY(IdPhieuMuon,IdQuyenSach),
 FOREIGN KEY (IdPhieuMuon) REFERENCES PhieuMuon(ID),
 FOREIGN KEY (IdQuyenSach) REFERENCES QuyenSach(ID),
@@ -139,6 +140,7 @@ MaSach VARCHAR(10) NOT NULL,TenSach NVARCHAR(50) NOT NULL,
 SoLuong INT,
 SoTrang INT NOT NULL,
 TinhTrangSach NVARCHAR(50)NOT NULL,
+DoHuHao float not null,
 PRIMARY KEY(IdPhieuTra,IdQuyenSach),
 FOREIGN KEY (IdPhieuTra) REFERENCES PhieuTra(ID),
 FOREIGN KEY (IdQuyenSach) REFERENCES QuyenSach(ID),
@@ -164,7 +166,8 @@ MaSach VARCHAR(10) NOT NULL,
 TenSach NVARCHAR(50) NOT NULL,
 SoLuong INT,
 SoTrang INT NOT NULL,
-TinhTrangSach NVARCHAR(50) NOT NULL
+TinhTrangSach NVARCHAR(50) NOT NULL,
+DoHuHao float not null,
 FOREIGN KEY (IdPhieuDen) REFERENCES PhieuDen(ID)
 )
 
@@ -188,6 +191,7 @@ TenSach NVARCHAR(50) NOT NULL,
 SoLuong INT,
 SoTrang INT NOT NULL,
 TinhTrangSach NVARCHAR(50) NOT NULL,
+DoHuHao float not null,
 FOREIGN KEY (IdPhieuNopMuon) REFERENCES PhieuNopMuon(ID)
 )
 
